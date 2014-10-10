@@ -7,7 +7,7 @@ import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.RootPanel;
 import com.google.gwt.user.client.ui.VerticalPanel;
 
-
+//SASA SITUATION
 /**
  * Entry point classes define <code>onModuleLoad()</code>.
  */
