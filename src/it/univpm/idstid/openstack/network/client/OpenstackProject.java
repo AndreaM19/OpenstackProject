@@ -1,6 +1,7 @@
 package it.univpm.idstid.openstack.network.client;
 
 import it.univpm.idstid.openstack.network.client.ui.main.MainPanel;
+import it.univpm.idstid.openstack.network.client.ui.main.TestView;
 import it.univpm.idstid.openstack.network.client.ui.side.WorkingAreas;
 
 import com.google.gwt.core.client.EntryPoint;
@@ -53,6 +54,9 @@ public class OpenstackProject implements EntryPoint {
 		
 		WorkingAreas wMenu=new WorkingAreas(p);
 		RootPanel.get("workingAreas").add(wMenu);
+		
+		TestView t = new TestView("");
+		RootPanel.get("contentSection").add(t);
 		
 	}
 }
