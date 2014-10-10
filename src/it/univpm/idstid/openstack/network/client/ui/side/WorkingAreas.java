@@ -1,5 +1,7 @@
 package it.univpm.idstid.openstack.network.client.ui.side;
 
+import it.univpm.idstid.openstack.network.client.ui.main.MainPanel;
+
 import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.event.logical.shared.ValueChangeHandler;
 import com.google.gwt.user.client.History;
@@ -12,7 +14,7 @@ public class WorkingAreas extends VerticalPanel implements ValueChangeHandler<St
 	private Label lbl = new Label();
 
 
-	public WorkingAreas(){
+	public WorkingAreas(MainPanel P){
 
 		// Create three hyperlinks that change the application's history.
 		Hyperlink link0 = new Hyperlink("link to foo", "foo");
