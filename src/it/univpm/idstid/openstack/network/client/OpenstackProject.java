@@ -1,5 +1,7 @@
 package it.univpm.idstid.openstack.network.client;
 
+import it.univpm.idstid.openstack.network.client.ui.side.WorkingAreas;
+
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.user.client.ui.HTML;
@@ -30,6 +32,7 @@ public class OpenstackProject implements EntryPoint {
 	 * This is the entry point method.
 	 */
 	public void onModuleLoad() {
+		
 		// Create a Label and an HTML widget.
 		Label lbl = new Label("This is just text.  It will not be interpreted "
 				+ "as <html>.");
@@ -43,6 +46,9 @@ public class OpenstackProject implements EntryPoint {
 		panel.add(lbl);
 		panel.add(html);
 		RootPanel.get("contentSection").add(panel);
-
+		
+		WorkingAreas wMenu=new WorkingAreas();
+		RootPanel.get("workingAreas").add(wMenu);
+		
 	}
 }
