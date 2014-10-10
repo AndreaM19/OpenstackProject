@@ -1,0 +1,2 @@
+serviceClass: it.univpm.idstid.openstack.network.client.GreetingService
+path: 29EDF23ED4E3F898A53C6E88379BDFCF.gwt.rpc
