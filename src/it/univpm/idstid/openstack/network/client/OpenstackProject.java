@@ -55,8 +55,5 @@ public class OpenstackProject implements EntryPoint {
 		WorkingAreas wMenu=new WorkingAreas(p);
 		RootPanel.get("workingAreas").add(wMenu);
 		
-		TestView t = new TestView("");
-		RootPanel.get("contentSection").add(t);
-		
 	}
 }

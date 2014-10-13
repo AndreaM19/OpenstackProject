@@ -5812,7 +5812,6 @@ button.close {
 
 .content-section-displayer{
 	min-height:300px; 
-	background-color:#DDD;
 }
 
 .backgroud_redOrange{
@@ -5821,4 +5820,17 @@ button.close {
 
 .border_right_grey{
 	border-right:solid 3px #666666;
+}
+
+.working-area-nav a{
+	font-size:20px;
+	color:
+	#333333;
+	text-decoration:none;
+	border-bottom:solid 2px;
+	border-color:transparent;
+}
+
+.working-area-nav a:hover{
+	border-color:#333333;
 }

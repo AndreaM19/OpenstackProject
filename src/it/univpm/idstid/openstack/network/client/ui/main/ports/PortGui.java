@@ -1,12 +1,17 @@
 package it.univpm.idstid.openstack.network.client.ui.main.ports;
 
+import it.univpm.idstid.openstack.network.var.OpenstackNetConstants;
+
+import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.VerticalPanel;
 
 public class PortGui  extends VerticalPanel{
 	
 	public PortGui(){
-		this.clear();
-		//add Ports UI elements	
+//		this.clear();
+		//add Ports UI elements
+		HTML pageTitle = new HTML(OpenstackNetConstants.HTML_PAGE_TITLE_PORT, true);
+		this.add(pageTitle);
 	}
 	
 	public void createPortUi(){
