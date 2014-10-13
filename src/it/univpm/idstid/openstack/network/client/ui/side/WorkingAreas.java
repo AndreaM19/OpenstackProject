@@ -2,6 +2,7 @@ package it.univpm.idstid.openstack.network.client.ui.side;
 
 import it.univpm.idstid.openstack.network.client.ui.main.MainPanel;
 import it.univpm.idstid.openstack.network.client.ui.main.TestView;
+import it.univpm.idstid.openstack.network.var.OpenstackNetConstants;
 
 import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.event.logical.shared.ValueChangeHandler;
@@ -16,20 +17,21 @@ public class WorkingAreas extends VerticalPanel implements ValueChangeHandler<St
 	private MainPanel p;
 
 
-	public WorkingAreas(MainPanel P){
+	public WorkingAreas(MainPanel p){
 		this.p=p;
 
 		// Create three hyperlinks that change the application's history.
-		Hyperlink link0 = new Hyperlink("link to foo", "foo");
-		Hyperlink link1 = new Hyperlink("link to bar", "bar");
-		Hyperlink link2 = new Hyperlink("link to baz", "baz");
-		Hyperlink link3 = new Hyperlink("link to clear", "clear");
+		Hyperlink link0 = new Hyperlink(OpenstackNetConstants.MENU_ITEM_NETWORK, "net");
+		Hyperlink link1 = new Hyperlink(OpenstackNetConstants.MENU_ITEM_SUBNET, "sub");
+		Hyperlink link2 = new Hyperlink(OpenstackNetConstants.MENU_ITEM_PORT, "port");
+		Hyperlink link3 = new Hyperlink(OpenstackNetConstants.MENU_ITEM_OVERVIEW, "overview");
+		Hyperlink link4 = new Hyperlink("Clear view", "clear");
 
 		// If the application starts with no history token, redirect to a new
 		// 'baz' state.
 		String initToken = History.getToken();
 		if (initToken.length() == 0) {
-			History.newItem("baz");
+			History.newItem("net");
 		}
 
 		// Add widgets to the panel.
@@ -38,6 +40,7 @@ public class WorkingAreas extends VerticalPanel implements ValueChangeHandler<St
 		this.add(link1);
 		this.add(link2);
 		this.add(link3);
+		this.add(link4);
 
 		// Add history listener
 				History.addValueChangeHandler(this);
@@ -51,7 +54,7 @@ public class WorkingAreas extends VerticalPanel implements ValueChangeHandler<St
 		// the label to reflect the current history token.
 		lbl.setText("The current history token is: " + event.getValue());
 		
-		if(event.getValue()=="bar"){
+		if(event.getValue()=="sub"){
 			TestView tv=new TestView("From menu");
 			p.add(tv);
 		}
