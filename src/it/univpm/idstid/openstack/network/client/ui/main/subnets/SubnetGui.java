@@ -6,11 +6,13 @@ import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.VerticalPanel;
 
 public class SubnetGui  extends VerticalPanel{
+	private HTML br = new HTML("<br>", true);
+	private HTML pageTitle=new HTML();
 	
 	public SubnetGui(){
 //		this.clear();
 		//add Subnets UI elements
-		HTML pageTitle = new HTML(OpenstackNetConstants.HTML_PAGE_TITLE_SUBNET, true);
+		pageTitle.setHTML(OpenstackNetConstants.HTML_PAGE_TITLE_SUBNET);
 		this.add(pageTitle);
 	}
 	

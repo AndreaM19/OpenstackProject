@@ -6,11 +6,13 @@ import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.VerticalPanel;
 
 public class PortGui  extends VerticalPanel{
+	private HTML br = new HTML("<br>", true);
+	private HTML pageTitle=new HTML();
 	
 	public PortGui(){
 //		this.clear();
 		//add Ports UI elements
-		HTML pageTitle = new HTML(OpenstackNetConstants.HTML_PAGE_TITLE_PORT, true);
+		pageTitle.setHTML(OpenstackNetConstants.HTML_PAGE_TITLE_PORT);
 		this.add(pageTitle);
 	}
 	

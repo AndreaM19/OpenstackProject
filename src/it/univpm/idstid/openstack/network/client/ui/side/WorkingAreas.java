@@ -58,7 +58,6 @@ public class WorkingAreas extends VerticalPanel implements ValueChangeHandler<St
 		// This method is called whenever the application's history changes. Set
 		// the content to reflect the current history token.
 
-		TestView tv;
 
 		switch(event.getValue()){
 		case "net":
