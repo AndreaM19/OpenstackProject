@@ -35,15 +35,12 @@ public class OpenstackNetConstants {
 	public static final String LABEL_NAME="Name";
 	public static final String LABEL_NETWORKID="Network Id";
 	public static final String LABEL_SECURITYGROUPS="Security groups";
+	public static final String LABEL_SUBNETS_ASSOCIATED="Subnets associated";
+	public static final String LABEL_SHARED="Shared";
+	public static final String LABEL_STATUS="Status";
+	public static final String LABEL_ACTIONS="Actions";
 	
-	
-//Available functions are:
-// - List Networks
-// - Create network
-// - Create multiple networks
-// - Show network
-// - Update network
-// - Delete network
-// ";
-	
+	//Buttons
+	public static final String BUTTON_NETWORK_CREATE="Create network";
+	public static final String BUTTON_NETWORK_CREATE_MULTIPLE="Create multiple network";
 }
