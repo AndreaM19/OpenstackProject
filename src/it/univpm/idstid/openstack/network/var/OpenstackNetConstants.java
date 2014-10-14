@@ -38,4 +38,8 @@ public class OpenstackNetConstants {
 // - Delete network
 // ";
 	
+	//Buttons
+	public static final String BUTTON_NETWORK_CREATE="Create network";
+	public static final String BUTTON_NETWORK_CREATE_MULTIPLE="Create multiple networks";
+		
 }

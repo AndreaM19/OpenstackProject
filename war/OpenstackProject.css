@@ -5834,3 +5834,15 @@ button.close {
 .working-area-nav a:hover{
 	border-color:#333333;
 }
+
+.grid-working-area-homepage{
+	border-collapse: collapse;
+}
+
+.grid-working-area-homepage td{
+	border: solid 2px; 
+	border-color:#333333;
+	min-width:120px;
+	text-align:center;
+	padding:5px;
+}
