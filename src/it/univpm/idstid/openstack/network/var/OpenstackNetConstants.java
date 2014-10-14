@@ -29,6 +29,14 @@ public class OpenstackNetConstants {
 	public static final String HTML_OVERVIEW_2="<p>NETWORK: In Openstack a network is an isolated virtual layer-2 broadcast domain that is typically reserved for the tenant who created it unless the network is configured to be shared. Tenants can create multiple networks until they reach the thresholds specified by per-tenant quotas.<br>In the Networking API v2.0, the network is the main entity. Ports and subnets are always associated with a network.</p>";
 	public static final String HTML_OVERVIEW_3="";
 	
+	//Label
+	public static final String LABEL_ADMINSTATEUP="Admin State Up";
+	public static final String LABEL_DEVICEID="Device Id";
+	public static final String LABEL_NAME="Name";
+	public static final String LABEL_NETWORKID="Network Id";
+	public static final String LABEL_SECURITYGROUPS="Security groups";
+	
+	
 //Available functions are:
 // - List Networks
 // - Create network
