@@ -37,16 +37,8 @@ public class OpenstackNetConstants {
 	public static final String LABEL_SECURITYGROUPS="Security groups";
 	
 	
-//Available functions are:
-// - List Networks
-// - Create network
-// - Create multiple networks
-// - Show network
-// - Update network
-// - Delete network
-// ";
-	
 	//Buttons
+	public static final String TEST="";
 	public static final String BUTTON_NETWORK_CREATE="Create network";
 	public static final String BUTTON_NETWORK_CREATE_MULTIPLE="Create multiple networks";
 		
