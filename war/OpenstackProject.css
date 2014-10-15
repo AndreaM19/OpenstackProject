@@ -5838,3 +5838,8 @@ button.close {
 	text-align:center;
 	min-width:80px;
 }
+
+.gwt-TextBox{
+	height:25px;
+	width:275px;
+}
